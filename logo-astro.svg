@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" aria-label="Logo de astronomía" role="img">
+  <defs>
+      <!-- Gradiente de la estrella -->
+      <radialGradient id="starGradient">
+          <stop offset="0%" stop-color="#ffe680"/>
+          <stop offset="65%" stop-color="#ffb12b"/>
+          <stop offset="100%" stop-color="#ff7300"/>
+      </radialGradient>
+      <!-- Halo -->
+      <filter id="glow">
+          <feGaussianBlur stdDeviation="15" result="blur"/>
+          <feMerge>
+              <feMergeNode in="blur"/>
+              <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+      </filter>
+      <!-- Sombreado del planeta -->
+      <radialGradient id="planetGradient" cx="30%" cy="30%" r="70%">
+          <stop offset="0%" stop-color="#333"/>
+          <stop offset="60%" stop-color="#111"/>
+          <stop offset="100%" stop-color="#000"/>
+      </radialGradient>
+  </defs>
+  <!-- Fondo -->
+  <rect width="800" height="800" fill="rgba(20,31,50)"/>
+  <!-- Órbita detrás de la estrella -->
+  <ellipse cx="400" cy="400" rx="330" ry="90" fill="none" stroke="#a0a0a0" stroke-width="12"/>
+  <!-- Estrella -->
+  <circle cx="400" cy="400" r="180" fill="url(#starGradient)" filter="url(#glow)"/>
+  <!-- Parte frontal de la órbita -->
+  <path d="M 70 400 A 330 90 0 0 0 730 400" fill="none" stroke="#a0a0a0" stroke-width="12"/>
+  <!-- Planeta -->
+  <circle cx="480" cy="485" r="45" fill="url(#planetGradient)"/>
+</svg>

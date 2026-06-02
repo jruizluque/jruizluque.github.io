@@ -1,0 +1,13 @@
+Date,Target,Station,Instrument,Filter,Notes,ETD,AAVSO,ExoClock
+2013-06-14,TrES-2b,MicroObservatory,KAF-1402ME,Clear,Exoplanet Watch,,https://apps.aavso.org/exosite/g/7416,
+2024-05-29,K2-31b,LCO,Planewave Delta Rho 350 + QHY 600M Pro,r',ExoClock Unlocked,https://var.astro.cz/en/Observations/93849?transId=12285,,https://www.exoclock.space/database/observations/K2-31b_7087_2024-05-29_Freddu33_1966_rpr
+2024-07-06,WASP-2b,ASARAMAS,Newtonian 8'' + NEQ-6 Pro + SX-814,Clear,,,,https://www.exoclock.space/database/observations/WASP-2b_4159_2024-07-06_quiniruizluque_760_Clear
+2024-07-14,TOI-905b,ASARAMAS,Newtonian 8'' + NEQ-6 Pro + SX-814,Clear,,,,https://www.exoclock.space/database/observations/TOI-905b_2396_2024-07-14_quiniruizluque_760_Clear
+2024-08-14,TOI-1130c,ASARAMAS,Newtonian 8'' + NEQ-6 Pro + SX-814,V,TTV,https://var.astro.cz/en/Observations/111664?transid=22751,https://apps.aavso.org/exosite/g/14705,https://www.exoclock.space/database/observations/TOI-1130c_1076_2024-08-14_quiniruizluque_760_Clear
+2024-09-15,WASP-4b,ASARAMAS,Newtonian 8'' + NEQ-6 Pro + SX-814,V,TTV,https://var.astro.cz/en/Observations/111591?transId=22705,https://apps.aavso.org/exosite/g/14680,https://www.exoclock.space/database/observations/WASP-4b_6742_2024-09-15_quiniruizluque_760_V
+2024-12-08,WASP-126b ,ASARAMAS,Newtonian 8'' + NEQ-6 Pro + SX-814,V,,,,https://www.exoclock.space/database/observations/WASP-126b_2769_2024-12-08_quiniruizluque_760_V
+2025-09-07,TOI-3331Ab ,ASARAMAS,Meade LX200 EMC 10'' + ST-9XE,Clear,,,,https://www.exoclock.space/database/observations/TOI-3331Ab_4648_2025-09-07_quiniruizluque_761_Clear
+2025-10-19,WASP-173Ab,ASARAMAS,Meade LX200 EMC 10'' + ST-9XE,Clear,,,,https://www.exoclock.space/database/observations/WASP-173Ab_6795_2025-10-19_quiniruizluque_761_Clear
+2025-11-23,WASP-45b,ASARAMAS,Meade LX200 EMC 10'' + ST-9XE,Clear,,,,https://www.exoclock.space/database/observations/WASP-45b_3025_2025-11-23_quiniruizluque_761_Clear
+2026-01-17,WASP-19b,ASARAMAS,Meade LX200 EMC 10'' + ST-9XE,Clear,TTV,https://var.astro.cz/en/Observations/112286?transId=23053,https://apps.aavso.org/exosite/g/15275,https://www.exoclock.space/database/observations/WASP-19b_12059_2026-01-17_quiniruizluque_761_Clear
+2026-01-21,WASP-19b,ASARAMAS,Meade LX200 EMC 10'' + ST-9XE,Clear,TTV,https://var.astro.cz/en/Observations/112993,https://apps.aavso.org/exosite/g/15973,https://www.exoclock.space/database/observations/WASP-19b_12064_2026-01-21_quiniruizluque_761_Clear/

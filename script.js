@@ -1,4 +1,4 @@
-// Observations will be loaded from observations.csv (columns: Dato,Target,Station,Instrument,Filter,Notes,ETD,AAVSO,ExoClock)
+// Observations will be loaded from data/observations.csv (columns: Dato,Target,Station,Instrument,Filter,Notes,ETD,AAVSO,ExoClock)
 let observationsData = [];
 let linksData = [];
 
@@ -58,7 +58,7 @@ function parseCSVGeneric(text){
 
 async function loadLinksCSV(){
   try{
-    const res = await fetch('links.csv');
+    const res = await fetch('data/links.csv');
     if(!res.ok) throw new Error('CSV load failed');
     const txt = await res.text();
     linksData = parseCSVGeneric(txt);
@@ -68,7 +68,7 @@ async function loadLinksCSV(){
     const containers = ['links-associations','links-databases','links-readings','links-campaigns','links-software','links-tools'];
     containers.forEach(id => {
       const el = document.getElementById(id);
-      if(el) el.innerHTML = '<div class="note">Error cargando links.csv — revisa la consola.</div>';
+      if(el) el.innerHTML = '<div class="note">Error cargando data/links.csv — revisa la consola.</div>';
     });
   }
 }
@@ -90,7 +90,7 @@ function renderLinksGrouped(list){
 
   if(!list || !list.length){
     for(const key in groups){
-      if(groups[key]) groups[key].innerHTML = '<div class="note">No se encontraron links en links.csv.</div>';
+      if(groups[key]) groups[key].innerHTML = '<div class="note">No se encontraron links en data/links.csv.</div>';
     }
     return;
   }
@@ -149,7 +149,7 @@ function renderLinksGrouped(list){
 
 async function loadObservationsCSV(){
   try{
-    const res = await fetch('observations.csv');
+    const res = await fetch('data/observations.csv');
     if(!res.ok) throw new Error('CSV load failed');
     const txt = await res.text();
     observationsData = parseCSV(txt);
@@ -157,7 +157,7 @@ async function loadObservationsCSV(){
   }catch(err){
     console.error(err);
     const container = document.getElementById('obs-container');
-    if(container) container.innerHTML = '<div class="note">Error cargando observations.csv — revisa la consola.</div>';
+    if(container) container.innerHTML = '<div class="note">Error cargando data/observations.csv — revisa la consola.</div>';
   }
 }
 

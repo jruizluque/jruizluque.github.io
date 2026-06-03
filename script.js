@@ -137,6 +137,8 @@ function renderLinksGrouped(list){
         li.innerHTML = `<a class="link" href="${safeLink}" target="_blank" rel="noopener noreferrer">${safeDescription}</a>`;
       } else {
         li.textContent = description || 'Link sin URL';
+        // Track last phone-state to avoid collapsing on minor viewport resizes (mobile address-bar hide/show)
+        let lastIsPhone = null;
       }
       ul.appendChild(li);
     }

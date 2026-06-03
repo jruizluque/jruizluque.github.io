@@ -160,6 +160,38 @@ async function loadObservationsCSV(){
 }
 
 /* --- Render observations: responsive table on wide, stacked cards on narrow --- */
+function updateCollapseState(){
+  const isPhone = window.matchMedia('(max-width:680px)').matches;
+  document.querySelectorAll('.collapsible').forEach(section => {
+    const toggle = section.querySelector('.collapsible-toggle');
+    if(!toggle) return;
+    const label = toggle.querySelector('.toggle-label');
+    if(isPhone){
+      section.classList.remove('expanded');
+      toggle.setAttribute('aria-expanded','false');
+      if(label) label.textContent = 'Show';
+    } else {
+      section.classList.add('expanded');
+      toggle.setAttribute('aria-expanded','true');
+      if(label) label.textContent = 'Hide';
+    }
+  });
+}
+
+function setupCollapsibleSections(){
+  document.querySelectorAll('.collapsible').forEach(section => {
+    const toggle = section.querySelector('.collapsible-toggle');
+    if(!toggle) return;
+    toggle.addEventListener('click', () => {
+      const expanded = !section.classList.contains('expanded');
+      section.classList.toggle('expanded', expanded);
+      toggle.setAttribute('aria-expanded', String(expanded));
+      const label = toggle.querySelector('.toggle-label');
+      if(label) label.textContent = expanded ? 'Hide' : 'Show';
+    });
+  });
+}
+
 function renderObservations(list){
   const container = document.getElementById('obs-container');
   container.innerHTML = '';
@@ -246,7 +278,12 @@ function escapeHtml(str){
 
 renderObservations(observationsData);
 loadLinksCSV();
-window.addEventListener('resize', () => renderObservations(observationsData));
+setupCollapsibleSections();
+updateCollapseState();
+window.addEventListener('resize', () => {
+  renderObservations(observationsData);
+  updateCollapseState();
+});
 
 /* --- Starfield canvas: subtle twinkle, respects reduced motion --- */
 (function(){

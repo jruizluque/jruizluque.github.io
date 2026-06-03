@@ -34,34 +34,6 @@
       <h2 id="about-heading" style="margin:0 0 8px;">About</h2>
       <p style="margin:0; color:var(--muted);">I am an amateur astronomer focused on photometry. I actively contribute exoplanet transit observations to the ExoClock project, as well as to the ETD and AAVSO databases. Every now and then, I participate in AAVSO variable star observing campaigns, report asteroid and comet astrometry to the Minor Planet Center, and collaborate in occultation observation campaigns.</p>
     </section>
-<!--
-    <section id="activities" class="section card fade-up" aria-labelledby="activities-heading">
-      <h2 id="activities-heading" style="margin:0 0 12px;">Activities</h2>
-      <div class="grid-3">
-        <article class="activity" aria-labelledby="act1">
-          <h3 id="act1">Exoplanet Transit Photometry</h3>
-          <p>High-cadence differential photometry to produce clean light curves and mid-transit times for community databases. Typical precision: 2–5 mmag for V~12 targets.</p>
-        </article>
-        <article class="activity" aria-labelledby="act2">
-          <h3 id="act2">Variable Star Monitoring</h3>
-          <p>Regular monitoring of short-period pulsators and eclipsing binaries; I aim to capture full cycles and share calibrated magnitudes for AAVSO contributors.</p>
-        </article>
-        <article class="activity" aria-labelledby="act3">
-          <h3 id="act3">Astrometry (Asteroids & Comets)</h3>
-          <p>Measure positions of small bodies with careful plate-solving and submit observations to the Minor Planet Center to support orbit refinement.</p>
-        </article>
-        <article class="activity" aria-labelledby="act4">
-         <h3 id="act4">Occultations</h3>
-         <p>Observe stellar occultations by asteroids, comets, or transiting bodies to refine orbital parameters and sizes.</p>
-       </article>
-      </div>
-    </section>
-  -->
-    <section id="observations" class="section observations card fade-up" aria-labelledby="obs-heading">
-      <h2 id="obs-heading" style="margin:0 0 10px;">Observations Log</h2>
-      <div class="note" style="margin-bottom:10px;">Recent exoplanet transit entries</div>
-      <div id="obs-container" style="overflow:auto;"></div>
-    </section>
 
     <section id="contact" class="section card fade-up" aria-labelledby="contact-heading">
       <h2 id="contact-heading" style="margin:0 0 10px;">Contact</h2>
@@ -69,94 +41,68 @@
         <div>If you are involved in an astronomy research project, observing campaign, or citizen science initiative and think my observations could be of value, I would be happy to hear from you. Feel free to get in touch to discuss how I might contribute. ✍️ <a class="link" href="mailto:hola@joaquin.ar">hola@joaquin.ar</a></div>
       </div>
     </section>
-    
-    <!--
-    <section id="links" class="section card fade-up" aria-labelledby="links-heading">
-      <h2 id="links-heading" style="margin:0 0 10px;">Links</h2>
 
-      <section class="links-subsection" aria-labelledby="links-assoc-heading">
-        <h3 id="links-assoc-heading">Associations</h3>
-        <div class="links footer links" id="links-associations">
-          <div class="note">Loading...</div>
-        </div>
-      </section>
-
-      <section class="links-subsection" aria-labelledby="links-info-heading">
-        <h3 id="links-info-heading">Campaigns</h3>
-        <div class="links footer links" id="links-campaigns">
-          <div class="note">Loading...</div>
-        </div>
-      </section>
-
-      <section class="links-subsection" aria-labelledby="links-db-heading">
-        <h3 id="links-db-heading">Databases</h3>
-        <div class="links footer links" id="links-databases">
-          <div class="note">Loading...</div>
-        </div>
-      </section>
-
-      <section class="links-subsection" aria-labelledby="links-readings-heading">
-        <h3 id="links-readings-heading">Readings</h3>
-        <div class="links footer links" id="links-readings">
-          <div class="note">Loading...</div>
-        </div>
-      </section>
-
-      <section class="links-subsection" aria-labelledby="links-software-heading">
-        <h3 id="links-software-heading">Software</h3>
-        <div class="links footer links" id="links-software">
-          <div class="note">Loading...</div>
-        </div>
-      </section>
-
-      <section class="links-subsection" aria-labelledby="links-tools-heading">
-        <h3 id="links-tools-heading">Tools</h3>
-        <div class="tools footer links" id="links-tools">
-          <div class="note">Loading...</div>
-        </div>
-      </section>
+    <section id="observations" class="section observations card fade-up collapsible" aria-labelledby="obs-heading">
+      <div class="section-header">
+        <h2 id="obs-heading" style="margin:0 0 10px;">Observations</h2>
+        <button type="button" class="collapsible-toggle" aria-expanded="false" aria-controls="obs-content">
+          <span class="toggle-label">Show</span>
+          <span class="toggle-arrow">▼</span>
+        </button>
+      </div>
+      <div id="obs-content" class="collapsible-content">
+        <div class="note" style="margin-bottom:10px;">Recent exoplanet transit entries</div>
+        <div id="obs-container" style="overflow:auto;"></div>
+      </div>
     </section>
-    -->
-    <!--#########################################-->
-    <section id="activities" class="section card fade-up" aria-labelledby="activities-heading">
-      <h2 id="activities-heading" style="margin:0 0 12px;">Links</h2>
-      <div class="grid-3">
-        <article class="activity" aria-labelledby="act1">
-        <h3 id="links-assoc-heading">Associations</h3>
-        <div class="links footer links" id="links-associations">
-          <div class="note">Loading...</div>
-        </div>
-        </article>
-        <article class="activity" aria-labelledby="act2">
-        <h3 id="links-info-heading">Campaigns</h3>
-        <div class="links footer links" id="links-campaigns">
-          <div class="note">Loading...</div>
-        </div>
-        </article>
-        <article class="activity" aria-labelledby="act3">
-        <h3 id="links-db-heading">Databases</h3>
-        <div class="links footer links" id="links-databases">
-          <div class="note">Loading...</div>
-        </div>
-        </article>
-        <article class="activity" aria-labelledby="act4">
-        <h3 id="links-readings-heading">Readings</h3>
-        <div class="links footer links" id="links-readings">
-          <div class="note">Loading...</div>
-        </div>
-        </article>
-        <article class="activity" aria-labelledby="act5">
-        <h3 id="links-software-heading">Software</h3>
-        <div class="links footer links" id="links-software">
-          <div class="note">Loading...</div>
-        </div>
-        </article>
-        <article class="activity" aria-labelledby="act6">
-          <h3 id="links-tools-heading">Tools</h3>
-          <div class="tools footer links" id="links-tools">
+
+    <section id="activities" class="section card fade-up collapsible links-section" aria-labelledby="activities-heading">
+      <div class="section-header">
+        <h2 id="activities-heading" style="margin:0 0 12px;">Links</h2>
+        <button type="button" class="collapsible-toggle" aria-expanded="false" aria-controls="links-content">
+          <span class="toggle-label">Show</span>
+          <span class="toggle-arrow">▼</span>
+        </button>
+      </div>
+      <div id="links-content" class="collapsible-content">
+        <div class="grid-3">
+          <article class="activity" aria-labelledby="act1">
+          <h3 id="links-assoc-heading">Associations</h3>
+          <div class="links footer links" id="links-associations">
             <div class="note">Loading...</div>
           </div>
-        </article>
+          </article>
+          <article class="activity" aria-labelledby="act2">
+          <h3 id="links-info-heading">Campaigns</h3>
+          <div class="links footer links" id="links-campaigns">
+            <div class="note">Loading...</div>
+          </div>
+          </article>
+          <article class="activity" aria-labelledby="act3">
+          <h3 id="links-db-heading">Databases</h3>
+          <div class="links footer links" id="links-databases">
+            <div class="note">Loading...</div>
+          </div>
+          </article>
+          <article class="activity" aria-labelledby="act4">
+          <h3 id="links-readings-heading">Readings</h3>
+          <div class="links footer links" id="links-readings">
+            <div class="note">Loading...</div>
+          </div>
+          </article>
+          <article class="activity" aria-labelledby="act5">
+          <h3 id="links-software-heading">Software</h3>
+          <div class="links footer links" id="links-software">
+            <div class="note">Loading...</div>
+          </div>
+          </article>
+          <article class="activity" aria-labelledby="act6">
+            <h3 id="links-tools-heading">Tools</h3>
+            <div class="tools footer links" id="links-tools">
+              <div class="note">Loading...</div>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
     <!--#########################################-->

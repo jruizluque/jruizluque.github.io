@@ -74,6 +74,21 @@ p.tagline{
 
 main{display:grid; gap:16px;}
 .section{display:block;}
+.section-header{display:flex;align-items:center;justify-content:space-between;gap:10px;}
+.collapsible-toggle{background:transparent;border:1px solid rgba(112,179,179,0.22);color:var(--accent);border-radius:999px;padding:6px 10px;font:0.92rem/1.1 inherit;cursor:pointer;display:flex;align-items:center;gap:5px;transition:background .18s,transform .18s;}
+.collapsible-toggle:hover,.collapsible-toggle:focus{background:rgba(112,179,179,0.08);outline:none;}
+.toggle-arrow{display:inline-block;transition:transform .2s ease;}
+.section.collapsible.expanded .toggle-arrow{transform:rotate(180deg);}
+.collapsible-content{overflow:hidden;transition:max-height .25s ease,opacity .25s ease;}
+@media (max-width:680px){
+  .collapsible .collapsible-toggle{display:inline-flex;}
+  .collapsible .collapsible-content{max-height:0;opacity:0;pointer-events:none;}
+  .collapsible.expanded .collapsible-content{max-height:2000px;opacity:1;pointer-events:auto;}
+}
+@media (min-width:681px){
+  .collapsible .collapsible-toggle{display:none;}
+  .collapsible .collapsible-content{max-height:none;opacity:1;pointer-events:auto;}
+}
 .grid-3{
   display:grid;
   grid-template-columns:repeat(3,1fr);

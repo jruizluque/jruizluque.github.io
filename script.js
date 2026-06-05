@@ -284,6 +284,10 @@ setupCollapsibleSections();
 updateCollapseState();
 window.addEventListener('resize', () => {
   renderObservations(observationsData);
+});
+
+// Solo reajustar collapsibles cuando cambia la orientación del dispositivo
+window.addEventListener('orientationchange', () => {
   updateCollapseState();
 });
 

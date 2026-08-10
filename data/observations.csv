@@ -1,4 +1,4 @@
-Date,Target,Station,Instrument,Filter,Notes,ETD,AAVSO,ExoClock
+Date,Target,Observatory,Instrument,Filter,Notes,ETD,AAVSO,ExoClock
 2013-06-14,TrES-2b,MicroObservatory,KAF-1402ME,Clear,Exoplanet Watch,,https://apps.aavso.org/exosite/g/7416,
 2024-05-29,K2-31b,LCO,Planewave Delta Rho 350 + QHY 600M Pro,r',ExoClock Unlocked,https://var.astro.cz/en/Observations/93849?transId=12285,,https://www.exoclock.space/database/observations/K2-31b_7087_2024-05-29_Freddu33_1966_rpr
 2024-07-06,WASP-2b,ASARAMAS,Newtonian 8'' + NEQ-6 Pro + SX-814,Clear,,,,https://www.exoclock.space/database/observations/WASP-2b_4159_2024-07-06_quiniruizluque_760_Clear

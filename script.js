@@ -1,4 +1,4 @@
-// Observations will be loaded from data/observations.csv (columns: Dato,Target,Station,Instrument,Filter,Notes,ETD,AAVSO,ExoClock)
+// Observations will be loaded from data/observations.csv (columns: Dato,Target,Observatory,Instrument,Filter,Notes,ETD,AAVSO,ExoClock)
 let observationsData = [];
 let linksData = [];
 
@@ -19,7 +19,7 @@ function parseCSV(text){
     const mapped = {
       date: obj['Date'] || obj['date'] || '',
       target: obj['Target'] || obj['target'] || '',
-      station: obj['Station'] || '',
+      station: obj['Observatory'] || obj['Station'] || '',
       instrument: obj['Instrument'] || '',
       filter: obj['Filter'] || '',
       notes: obj['Notes'] || '',
@@ -210,7 +210,7 @@ function renderObservations(list){
     const table = document.createElement('table');
     table.className = 'obs';
     const thead = document.createElement('thead');
-    thead.innerHTML = '<tr><th>Date</th><th>Target</th><th>Station</th><th>Instrument</th><th>Filter</th><th>Notes</th><th>Databases</th></tr>';
+    thead.innerHTML = '<tr><th>Date</th><th>Target</th><th>Observatory</th><th>Instrument</th><th>Filter</th><th>Notes</th><th>Databases</th></tr>';
     table.appendChild(thead);
     const tbody = document.createElement('tbody');
     for(const o of list){
